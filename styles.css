@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(255, 223, 228); /* Soft pink for a romantic vibe */
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Header Text */
+.header_text {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 48, 88); /* Valentine’s red */
+    margin: 10px 0;
+}
+
+/* Image Styling */
+.image_container img {
+    width: 180px;  /* Adjust size as needed */
+    height: auto;
+    border-radius: 12px; /* Rounded corners for aesthetics */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* GIF Styling */
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.gif_container img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 12px;
+}
+
+
+/* Button Container */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+/* General Button Styling */
+.btn {
+    background-color: #ff6b81;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #ff4757;
+}
+
+/* YES Button */
+#yesButton {
+    background-color: #2ed573; /* Green for positive */
+}
+
+#yesButton:hover {
+    background-color: #1eaa5f;
+}
+
+/* NO Button */
+#noButton {
+    position: relative; /* Fix alignment */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* NO Button Moves on Hover */
+#noButton:hover {
+    transform: translate(30px, 10px); /* Moves slightly */
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+    .header_text {
+        font-size: 28px;
+    }
+
+    .image_container img {
+        width: 120px;
+    }
+
+    .gif_container img {
+        max-width: 200px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
